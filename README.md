@@ -31,6 +31,7 @@
   - [Strengths](#strengths)
   - [Limitations](#limitations)
   - [Improvements](#possible-improvements)
+- [Sample Outputs](#sample-outputs)
 - [Conclusion](#conclusion)
 
 ---
@@ -334,6 +335,15 @@ Other            ████░░░░░░░░░░░░░░░░░
 10. **Synthetic data generation** — use Unity ML-Agents or Unreal Engine to generate unlimited annotated training data for rare occlusion and lighting scenarios
 
 
+## Sample Outputs
+**What the output videos show:**
+- 🟩 Colored bounding boxes (unique color per player ID)
+- 🔢 Player ID labels (Player 0, Player 1, etc.)
+- ⚪ 17 body keypoints (color-coded: green=nose, yellow=shoulders, cyan=elbows, magenta=wrists, orange=hips, blue=knees, red=ankles)
+- 🦴 Skeleton connections between joints
+- 📊 Confidence scores per detection
+
+  
 
 ## Conclusion
 
