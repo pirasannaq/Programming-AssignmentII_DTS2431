@@ -343,7 +343,13 @@ Other            ████░░░░░░░░░░░░░░░░░
 - 🦴 Skeleton connections between joints
 - 📊 Confidence scores per detection
 
-  
+https://github.com/user-attachments/assets/1104a867-c511-4ac3-a7f5-6477c9b10297
+https://github.com/user-attachments/assets/64de848d-71b5-4f85-9662-bf45563d84ab
+https://github.com/user-attachments/assets/3bceb2b9-918a-4d5f-884e-31d8ef54efab
+https://github.com/user-attachments/assets/4c07010d-4af1-44e2-b210-725d2be15d32
+https://github.com/user-attachments/assets/4e8c4145-9a2f-4092-ac8c-4228b230ee42
+https://github.com/user-attachments/assets/5af484e4-2238-4736-85c2-d0c4b550bb1c
+https://github.com/user-attachments/assets/0ac7f2d4-54dd-4307-8f9c-5212296d0188
 
 ## Conclusion
 
