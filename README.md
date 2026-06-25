@@ -58,7 +58,7 @@ This project implements a **computer vision pipeline** for detecting, tracking, 
 
 ## Dataset
 
-> 📁 **Dataset Link:** *(add your Google Drive / Roboflow / Kaggle link here)*
+> 📁 **Dataset Link:** *https://drive.google.com/drive/folders/1UMDMpbEbolu9qhCvk1YW2jrJo1nRe8BI?usp=sharing*
 - Each clip trimmed to 5–10 seconds using `ffmpeg`
 - No custom annotation required — YOLOv8-pose uses pre-trained COCO weights
 
@@ -79,10 +79,6 @@ DS5216_Assignment02/
 │   ├── video2_tracking.mp4
 │   └── ... (video3–video15_tracking.mp4)
 ├── screenshots/                       ← Sample output frames
-│   ├── detection_sample.png
-│   ├── keypoint_sample.png
-│   └── skeleton_sample.png
-└── player_tracking_results.zip        ← All output videos packaged
 ```
 
 ---
