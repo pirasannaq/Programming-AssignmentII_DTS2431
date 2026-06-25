@@ -2,9 +2,9 @@
 
 
 import os
-import cv2
-import numpy as np
-from tqdm import tqdm
+import subprocess
+import sys
+import importlib
 import tkinter as tk
 from tkinter import filedialog, messagebox
 import shutil
@@ -13,6 +13,30 @@ import warnings
 import platform
 import time
 
+
+def ensure_package(package_name, import_name=None):
+    module_name = import_name or package_name.replace('-', '_')
+    try:
+        importlib.import_module(module_name)
+    except ImportError:
+        print(f"Installing {package_name}...")
+        subprocess.check_call([sys.executable, "-m", "pip", "install", package_name])
+        importlib.import_module(module_name)
+
+
+for package, module in [
+    ("opencv-python", "cv2"),
+    ("numpy", "numpy"),
+    ("tqdm", "tqdm"),
+    ("torch", "torch"),
+    ("torchvision", "torchvision"),
+    ("ultralytics", "ultralytics"),
+]:
+    ensure_package(package, module)
+
+import cv2
+import numpy as np
+from tqdm import tqdm
 import torch
 import torch.nn as nn
 from ultralytics import YOLO
@@ -632,19 +656,5 @@ def main():
 
 
 if __name__ == "__main__":
-    # Install missing packages
-    required = ['ultralytics', 'opencv-python', 'numpy', 'tqdm']
-
-    import subprocess
-    import sys
-
-    for package in required:
-        try:
-            __import__(package.replace('-', '_'))
-        except ImportError:
-            print(f" Installing {package}...")
-            subprocess.check_call([sys.executable, "-m", "pip", "install", package])
-
-
     # Run main program
     main()
