@@ -59,7 +59,7 @@ This project implements a **computer vision pipeline** for detecting, tracking, 
 ## Dataset
 
 > 📁 **Dataset Link:** *https://drive.google.com/drive/folders/1UMDMpbEbolu9qhCvk1YW2jrJo1nRe8BI?usp=sharing*
-- Each clip trimmed to 5–10 seconds using `ffmpeg`
+- Each clip trimmed to 5–10 seconds 
 - No custom annotation required — YOLOv8-pose uses pre-trained COCO weights
 
 ---
